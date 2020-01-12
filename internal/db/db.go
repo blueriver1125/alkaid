@@ -7,17 +7,4 @@
  *
  */
 
-package main
-
-import (
-	"github.com/yakumioto/glog"
-
-	"github.com/yakumioto/alkaid/internal/config"
-)
-
-func main() {
-	cmd := config.InitConfig()
-	if err := cmd.Execute(); err != nil {
-		glog.Fatalln(err)
-	}
-}
+package db
